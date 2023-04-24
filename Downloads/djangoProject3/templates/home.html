@@ -8,9 +8,9 @@
     <script src="{% static 'js/bootstrap.min.js' %}"></script>
 </head>
 <body>
-<h1>WELCOME TO THE HOMEPAGE</h1>
+<h1>WELCOME TO THE HOMEPAGE, <span style="color:palevioletred;">{{ member.username}} {{member.password}}</span></h1>
 
-{{ member.firstname }} {{ member.lastname }}
+
 <br><br>
 <a href="{% url 'login' %}" class="btn btn-warning">Log Out</a>
 </body>
